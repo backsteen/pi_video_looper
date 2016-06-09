@@ -19,7 +19,7 @@ class OMXPlayer(object):
         self._extensions = config.get('omxplayer', 'extensions') \
                                  .translate(None, ' \t\r\n.') \
                                  .split(',')
-        self._extra_args = config.get('omxplayer', 'extra_args').split()
+        self._extra_args = config.get('omxplayer', --win '0 0 1279 959').split()
         self._sound = config.get('omxplayer', 'sound').lower()
         assert self._sound in ('hdmi', 'local', 'both'), 'Unknown omxplayer sound configuration value: {0} Expected hdmi, local, or both.'.format(self._sound)
 
