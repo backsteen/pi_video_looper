@@ -31,7 +31,7 @@ class OMXPlayer(object):
         """Play the provided movied file, optionally looping it repeatedly."""
         self.stop(3)  # Up to 3 second delay to let the old player stop.
         # Assemble list of arguments.
-        args = ['omxplayer -o hdmi --win "0 0 1240 600"']
+        args = ['omxplayer -o']
         #args.extend(['-o', self._sound])  # Add sound arguments.
         #args.extend(self._extra_args)     # Add extra arguments from config.
         if vol is not 0:
