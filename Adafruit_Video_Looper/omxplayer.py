@@ -33,11 +33,11 @@ class OMXPlayer(object):
         # Assemble list of arguments.
         args = ['omxplayer -o hdmi --win "0 0 1240 600"']
         #args.extend(['-o', self._sound])  # Add sound arguments.
-        args.extend(self._extra_args)     # Add extra arguments from config.
+        #args.extend(self._extra_args)     # Add extra arguments from config.
         if vol is not 0:
-            args.extend(['--vol', str(vol)])
+         #   args.extend(['--vol', str(vol)])
         if loop:
-            args.append('--loop')         # Add loop parameter if necessary.
+        #    args.append('--loop')         # Add loop parameter if necessary.
         args.append(movie)                # Add movie file path.
         # Run omxplayer process and direct standard output to /dev/null.
         self._process = subprocess.Popen(args,
